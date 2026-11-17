@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche | Performance e Sofisticação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>PORSCHE</h2>
+            <p>Performance. Precisão. Emoção.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Modelos</a>
+            <a href="#javascript">Tecnologia</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+        <div class="acoes">
+            <button id="botao-tema" class="botao-secundario" type="button">Modo escuro</button>
+
+            <p class="carrinho">
+                Carrinho: <span id="contador-carrinho">0</span> item(ns) |
+                <span id="total-carrinho">R$ 0,00</span>
+            </p>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <div class="banner">
+                <div class="banner-texto">
+                    <h2>Uma experiência extraordinária</h2>
+                    <p>Descubra a combinação perfeita entre design, inovação e desempenho.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2>Conheça nossos modelos</h2>
+
+            <div class="produtos">
+
+                <article class="produto" data-id="1">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&q=85" alt="Porsche 911">
+
+                    <h3>Porsche 911 Carrera</h3>
+                    <p class="preco">Consulte condições</p>
+
+                    <div class="botoes">
+                        <button class="botao-comprar" type="button" data-id="1">Comprar</button>
+                        <button class="botao-detalhes botao-secundario" type="button" data-id="1">Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-id="2">
+                    <img src="https://images.unsplash.com/photo-1611859266238-4b98091d9d9b?w=900&q=85" alt="Porsche 718 Cayman">
+
+                    <h3>Porsche 718 Cayman</h3>
+                    <p class="preco">Consulte condições</p>
+
+                    <div class="botoes">
+                        <button class="botao-comprar" type="button" data-id="2">Comprar</button>
+                        <button class="botao-detalhes botao-secundario" type="button" data-id="2">Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-id="3">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Porsche_Taycan_%2852431802073%29.jpg/1280px-Porsche_Taycan_%2852431802073%29.jpg" alt="Porsche Taycan">
+
+                    <h3>Porsche Taycan</h3>
+                    <p class="preco">Consulte condições</p>
+
+                    <div class="botoes">
+                        <button class="botao-comprar" type="button" data-id="3">Comprar</button>
+                        <button class="botao-detalhes botao-secundario" type="button" data-id="3">Detalhes</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="javascript">
+            <h2>Engenharia e tecnologia Porsche</h2>
+
+            <div class="aula-js">
+                <p>
+                    A Porsche une tradição e inovação para criar veículos de alto desempenho.
+                    Cada modelo combina engenharia de precisão, tecnologia avançada
+                    e um design reconhecido mundialmente.
+                </p>
+
+                <ul>
+                    <li><strong>Desempenho</strong> desenvolvido para uma condução emocionante.</li>
+                    <li><strong>Design</strong> que une elegância, aerodinâmica e funcionalidade.</li>
+                    <li><strong>Inovação</strong> presente em cada detalhe da experiência Porsche.</li>
+                </ul>
+
+                <p>
+                    Explore os modelos, conheça seus diferenciais e entre em contato
+                    com nossa equipe para receber mais informações.
+                </p>
+
+                <div class="demo">
+                    <h3>Explore a experiência Porsche</h3>
+                    <button id="botao-demo" type="button">Explorar</button>
+                    <p id="resultado-demo">Clique em explorar para iniciar.</p>
+                </div>
+
+                <div class="demo">
+                    <h3>Atendimento personalizado</h3>
+
+                    <label for="campo-nome-demo">Como podemos chamar você?</label>
+                    <input type="text" id="campo-nome-demo" placeholder="Digite seu nome">
+
+                    <button id="botao-saudacao" type="button">Iniciar atendimento</button>
+                    <p id="resultado-saudacao"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="sobre">
+                <h2>Sobre a Porsche</h2>
+                <p>
+                    A Porsche é referência mundial em carros esportivos,
+                    reconhecida pela combinação de desempenho, tecnologia,
+                    luxo e design. Conheça alguns dos modelos que representam essa tradição.
+                </p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contato">
+                <h2>Contato</h2>
+                <p>E-mail: atendimento@porsche.com.br</p>
+            </div>
+
+            <h2>Fale com nossa equipe</h2>
+
+            <form action="#" method="post" id="formulario-contato">
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Informações sobre modelos</option>
+                    <option value="produto">Agendar uma visita</option>
+                    <option value="comprar">Condições de compra</option>
+                    <option value="outro">Outro assunto</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte como podemos ajudar" required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="mensagem-formulario" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p>© 2026 Porsche | Performance e Sofisticação</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="modal-conteudo">
+            <h3 id="modal-titulo">Modelo Porsche</h3>
+            <p id="modal-descricao"></p>
+            <p id="modal-preco" class="preco"></p>
+
+            <div class="botoes">
+                <button id="modal-comprar" type="button">Adicionar ao carrinho</button>
+                <button id="modal-fechar" class="botao-secundario" type="button">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+    <script>
+        console.log('Bem-vindo à experiência Porsche.');
+
+        const nomeDaLoja = 'Porsche';
+
+        let quantidadeNoCarrinho = 0;
+        let totalNoCarrinho = 0;
+
+        const lojaAberta = true;
+
+        console.log(`A loja "${nomeDaLoja}" está aberta? ${lojaAberta}`);
+        console.log(typeof nomeDaLoja, typeof quantidadeNoCarrinho, typeof lojaAberta);
+
+        const contadorCarrinho = document.querySelector('#contador-carrinho');
+        const totalCarrinho = document.querySelector('#total-carrinho');
+        const aviso = document.querySelector('#aviso');
+
+        const botoesComprar = document.querySelectorAll('.botao-comprar');
+        const botoesDetalhes = document.querySelectorAll('.botao-detalhes');
+
+        const modal = document.querySelector('#modal');
+        const modalTitulo = document.querySelector('#modal-titulo');
+        const modalDescricao = document.querySelector('#modal-descricao');
+        const modalPreco = document.querySelector('#modal-preco');
+        const modalComprar = document.querySelector('#modal-comprar');
+        const modalFechar = document.querySelector('#modal-fechar');
+
+        const botaoTema = document.querySelector('#botao-tema');
+
+        const botaoDemo = document.querySelector('#botao-demo');
+        const resultadoDemo = document.querySelector('#resultado-demo');
+        const campoNomeDemo = document.querySelector('#campo-nome-demo');
+        const botaoSaudacao = document.querySelector('#botao-saudacao');
+        const resultadoSaudacao = document.querySelector('#resultado-saudacao');
+
+        const formulario = document.querySelector('#formulario-contato');
+        const campoNome = document.querySelector('#nome');
+        const mensagemFormulario = document.querySelector('#mensagem-formulario');
+
+        const produtos = [
+            {
+                id: 1,
+                nome: 'Porsche 911 Carrera',
+                preco: 0,
+                descricao: 'Um esportivo icônico que combina desempenho, precisão e design atemporal. Entre em contato para consultar versões e condições.'
+            },
+            {
+                id: 2,
+                nome: 'Porsche 718 Cayman',
+                preco: 0,
+                descricao: 'Um esportivo de motor central, desenvolvido para oferecer equilíbrio, agilidade e uma experiência de condução envolvente. Consulte a equipe.'
+            },
+            {
+                id: 3,
+                nome: 'Porsche Taycan',
+                preco: 0,
+                descricao: 'Um modelo totalmente elétrico que une tecnologia, desempenho e o DNA esportivo da Porsche. Consulte versões e condições.'
+            }
+        ];
+
+        function formatarPreco(valor) {
+            return valor === 0 ? 'Consulte condições' : valor.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            });
+        }
+
+        let temporizadorAviso;
+
+        function mostrarAviso(texto) {
+            aviso.textContent = texto;
+            aviso.classList.add('visivel');
+
+            clearTimeout(temporizadorAviso);
+
+            temporizadorAviso = setTimeout(() => {
+                aviso.classList.remove('visivel');
+            }, 2500);
+        }
+
+        function atualizarCarrinho() {
+            contadorCarrinho.textContent = quantidadeNoCarrinho;
+            totalCarrinho.textContent = formatarPreco(totalNoCarrinho);
+        }
+
+        function adicionarAoCarrinho(idDoProduto) {
+            const produto = produtos.find(item => item.id === idDoProduto);
+
+            if (!produto) {
+                console.log('Modelo não encontrado: ' + idDoProduto);
+                return;
+            }
+
+            quantidadeNoCarrinho++;
+            totalNoCarrinho += produto.preco;
+
+            atualizarCarrinho();
+            mostrarAviso(`${produto.nome} foi adicionado ao carrinho!`);
+
+            console.log(`Carrinho: ${quantidadeNoCarrinho} item(ns), total ${formatarPreco(totalNoCarrinho)}`);
+        }
+
+        botoesComprar.forEach((botao) => {
+            botao.addEventListener('click', () => {
+                const idDoProduto = Number(botao.dataset.id);
+                adicionarAoCarrinho(idDoProduto);
+            });
+        });
+
+        let produtoAberto = null;
+
+        function abrirModal(idDoProduto) {
+            const produto = produtos.find(item => item.id === idDoProduto);
+
+            if (!produto) {
+                return;
+            }
+
+            produtoAberto = produto;
+
+            modalTitulo.textContent = produto.nome;
+            modalDescricao.textContent = produto.descricao;
+            modalPreco.textContent = formatarPreco(produto.preco);
+
+            modal.classList.add('aberto');
+            modalFechar.focus();
+        }
+
+        function fecharModal() {
+            modal.classList.remove('aberto');
+            produtoAberto = null;
+        }
+
+        botoesDetalhes.forEach((botao) => {
+            botao.addEventListener('click', () => {
+                abrirModal(Number(botao.dataset.id));
+            });
+        });
+
+        modalFechar.addEventListener('click', fecharModal);
+
+        modalComprar.addEventListener('click', () => {
+            if (produtoAberto !== null) {
+                adicionarAoCarrinho(produtoAberto.id);
+                fecharModal();
+            }
+        });
+
+        modal.addEventListener('click', (evento) => {
+            if (evento.target === modal) {
+                fecharModal();
+            }
+        });
+
+        document.addEventListener('keydown', (evento) => {
+            if (evento.key === 'Escape') {
+                fecharModal();
+            }
+        });
+
+        function atualizarTextoDoTema() {
+            const estaEscuro = document.body.classList.contains('escuro');
+            botaoTema.textContent = estaEscuro ? 'Modo claro' : 'Modo escuro';
+        }
+
+        if (localStorage.getItem('tema') === 'escuro') {
+            document.body.classList.add('escuro');
+        }
+
+        atualizarTextoDoTema();
+
+        botaoTema.addEventListener('click', () => {
+            const escuro = document.body.classList.toggle('escuro');
+            localStorage.setItem('tema', escuro ? 'escuro' : 'claro');
+            atualizarTextoDoTema();
+        });
+
+        let cliquesDemo = 0;
+
+        botaoDemo.addEventListener('click', () => {
+            cliquesDemo++;
+
+            if (cliquesDemo === 1) {
+                resultadoDemo.textContent = 'Você explorou 1 vez!';
+            } else {
+                resultadoDemo.textContent = `Você explorou ${cliquesDemo} vezes!`;
+            }
+        });
+
+        botaoSaudacao.addEventListener('click', () => {
+            const nome = campoNomeDemo.value.trim();
+
+            if (nome === '') {
+                resultadoSaudacao.textContent = 'Digite o seu nome primeiro.';
+            } else {
+                resultadoSaudacao.textContent = `Olá, ${nome}! Seja bem-vindo à experiência ${nomeDaLoja}.`;
+            }
+        });
+
+        formulario.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+
+            const nome = campoNome.value.trim();
+
+            if (nome.length < 3) {
+                mensagemFormulario.textContent = 'Digite um nome com pelo menos 3 letras.';
+                mensagemFormulario.className = 'erro';
+                return;
+            }
+
+            mensagemFormulario.textContent = `Obrigado, ${nome}! Recebemos a sua mensagem.`;
+            mensagemFormulario.className = 'sucesso';
+
+            formulario.reset();
+        });
+    </script>
+
+</body>
+</html>
